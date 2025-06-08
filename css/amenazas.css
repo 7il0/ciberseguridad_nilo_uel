@@ -1,0 +1,367 @@
+/* Estilos específicos para la página de amenazas */
+.threats-page {
+  padding-bottom: 3rem;
+}
+
+.threats-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #2c3e50, #4a6491);
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.threats-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.threats-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.threat-svg {
+  width: 150px;
+  height: 150px;
+  margin: 1rem auto;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+.threats-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.threat-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.threat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.threat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.threat-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.threat-level {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.threat-level.high {
+  background-color: #f39c12;
+}
+
+.threat-level.critical {
+  background-color: #e74c3c;
+}
+
+.threat-level.medium {
+  background-color: #3498db;
+}
+
+.threat-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.threat-figure {
+  margin: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.threat-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.threat-img.interactive {
+  cursor: pointer;
+}
+
+.threat-img.interactive:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.3);
+}
+
+.threat-figure figcaption {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #f5f5f5;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.threat-info h3 {
+  color: var(--primary-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.threat-types {
+  margin-bottom: 1.5rem;
+  padding-left: 1.2rem;
+}
+
+.threat-types li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.threat-types li::before {
+  content: '•';
+  color: var(--accent-color);
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.threat-types strong {
+  color: var(--primary-color);
+}
+
+.threat-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.stat-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--secondary-color);
+}
+
+.threat-timeline {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.threat-timeline h3 {
+  margin-top: 0;
+}
+
+.timeline-steps {
+  counter-reset: step;
+  padding-left: 0;
+}
+
+.timeline-steps li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.threats-table-section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.threats-table-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.threats-table-section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0.5rem auto 0;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.threats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.threats-table caption {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.threats-table th,
+.threats-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.threats-table thead th {
+  background-color: var(--primary-color);
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.threats-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.threats-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.threats-table th[scope="row"] {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Animaciones */
+@keyframes pulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .threats-hero {
+    flex-direction: row;
+    text-align: left;
+    padding: 4rem 2rem;
+  }
+  
+  .hero-content {
+    margin: 0 2rem 0 0;
+    text-align: left;
+  }
+  
+  .threat-svg {
+    margin: 0;
+  }
+  
+  .threat-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .threat-card:nth-child(even) .threat-content {
+    direction: rtl;
+  }
+  
+  .threat-card:nth-child(even) .threat-info {
+    direction: ltr;
+  }
+}
+
+@media (max-width: 576px) {
+  .threats-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .threat-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .threat-level {
+    margin-top: 0.5rem;
+  }
+  
+  .threat-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .threats-table th,
+  .threats-table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

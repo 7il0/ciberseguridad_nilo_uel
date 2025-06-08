@@ -1,0 +1,252 @@
+/* Estilos específicos para la página de contacto */
+.contact-page {
+  padding-bottom: 3rem;
+}
+
+.contact-title {
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.contact-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--accent-color);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.error-message {
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.error-message.show {
+  opacity: 1;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+}
+
+.contact-info {
+  background: var(--primary-color);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  align-self: start;
+}
+
+.contact-info h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.contact-info h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.info-card:hover {
+  transform: translateX(5px);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--secondary-color);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.social-link:hover {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.map-section {
+  margin-top: 3rem;
+}
+
+.map-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.map-figure {
+  margin: 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.map-image:hover {
+  transform: scale(1.02);
+}
+
+.map-figure figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Responsive para contacto */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info {
+    order: -1;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+  
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}

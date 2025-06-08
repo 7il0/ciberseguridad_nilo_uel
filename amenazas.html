@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <title>Amenazas Cibernéticas | Ciberseguridad</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/amenazas.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <figure class="logo-figure">
+                <a href="index.html" class="logo-link">
+                    <img src="img/header_logo.png" alt="Logo Ciberseguridad" class="logo" style="height: 100px;">
+                </a>
+            </figure>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="amenazas.html" class="active">Amenazas</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Menú móvil">☰</button>
+        </div>
+    </header>
+
+    <main class="main-content threats-page">
+        <section class="threats-hero">
+            <div class="hero-content">
+                <h1>Amenazas Cibernéticas</h1>
+                <p>Conoce los principales riesgos de seguridad en el mundo digital</p>
+            </div>
+            <div class="threat-animation">
+                <svg class="threat-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="#e74c3c" stroke-width="4"
+                        stroke-dasharray="5,5" />
+                    <path d="M100,30 L120,80 L170,80 L130,110 L150,160 L100,130 L50,160 L70,110 L30,80 L80,80 Z"
+                        fill="#e74c3c" class="pulse" />
+                    <circle cx="100" cy="100" r="40" fill="#2c3e50" stroke="#ecf0f1" stroke-width="3" />
+                    <text x="100" y="110" font-family="Arial" font-size="20" fill="white" text-anchor="middle">!</text>
+                </svg>
+            </div>
+        </section>
+
+        <section class="threats-container">
+            <article class="threat-card" id="malware">
+                <div class="threat-header">
+                    <h2>Malware</h2>
+                    <span class="threat-level high">Alto riesgo</span>
+                </div>
+                <div class="threat-content">
+                    <figure class="threat-figure">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/malware-mobile.jpg">
+                            <img src="img/malware.jpg" alt="Representación gráfica de malware" class="threat-img">
+                        </picture>
+                        <figcaption>Ejemplo de infección por malware</figcaption>
+                    </figure>
+                    <div class="threat-info">
+                        <h3>¿Qué es?</h3>
+                        <p>Software malicioso diseñado para dañar sistemas, robar información o tomar el control de
+                            dispositivos sin consentimiento del usuario.</p>
+
+                        <h3>Tipos principales:</h3>
+                        <ul class="threat-types">
+                            <li><strong>Virus:</strong> Se replica infectando otros archivos</li>
+                            <li><strong>Troyanos:</strong> Se disfrazan de software legítimo</li>
+                            <li><strong>Spyware:</strong> Roba información personal</li>
+                            <li><strong>Adware:</strong> Muestra publicidad no deseada</li>
+                        </ul>
+
+                        <div class="threat-stats">
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
+                                </svg>
+                                <span>+350K nuevas variantes diarias</span>
+                            </div>
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z" />
+                                </svg>
+                                <span>Daños anuales: $6 billones</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="threat-card" id="phishing">
+                <div class="threat-header">
+                    <h2>Phishing</h2>
+                    <span class="threat-level critical">Crítico</span>
+                </div>
+                <div class="threat-content">
+                    <div class="threat-info">
+                        <h3>¿Qué es?</h3>
+                        <p>Técnica de ingeniería social que busca engañar a las víctimas para que revelen información
+                            sensible como credenciales o datos bancarios.</p>
+
+                        <h3>Métodos comunes:</h3>
+                        <ul class="threat-types">
+                            <li><strong>Correos fraudulentos:</strong> Suplantando entidades legítimas</li>
+                            <li><strong>Sitios web falsos:</strong> Imitando páginas oficiales</li>
+                            <li><strong>Mensajes SMS (Smishing):</strong> Enlaces maliciosos por mensaje</li>
+                            <li><strong>Llamadas (Vishing):</strong> Suplantación telefónica</li>
+                        </ul>
+
+                        <div class="threat-stats">
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                                <span>+3.4B emails fraudulentos diarios</span>
+                            </div>
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z" />
+                                </svg>
+                                <span>Éxito en 30% de intentos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="threat-figure">
+                        <img src="img/phishing.png" alt="Mapa global de ataques phishing" usemap="#phishingMap"
+                            class="threat-img interactive">
+                        <map name="phishingMap">
+                            <area shape="rect" coords="50,30,150,100" alt="América del Norte" href="#north-america"
+                                title="35% de ataques">
+                            <area shape="circle" coords="300,80,50" alt="Europa" href="#europe" title="28% de ataques">
+                            <area shape="poly" coords="400,150,450,200,400,250,350,200" alt="Asia" href="#asia"
+                                title="25% de ataques">
+                        </map>
+                        <figcaption>Zonas más afectadas por phishing</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="threat-card" id="ransomware">
+                <div class="threat-header">
+                    <h2>Ransomware</h2>
+                    <span class="threat-level critical">Crítico</span>
+                </div>
+                <div class="threat-content">
+                    <figure class="threat-figure">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/ransomware-mobile.jpg">
+                            <img src="img/ransomware.png" alt="Ejemplo de ataque ransomware" class="threat-img">
+                        </picture>
+                        <figcaption>Pantalla típica de ransomware</figcaption>
+                    </figure>
+                    <div class="threat-info">
+                        <h3>¿Qué es?</h3>
+                        <p>Malware que cifra los archivos de la víctima y exige un rescate económico a cambio de
+                            liberarlos.</p>
+
+                        <h3>Características:</h3>
+                        <ul class="threat-types">
+                            <li><strong>Target:</strong> Empresas, hospitales, gobiernos</li>
+                            <li><strong>Pago:</strong> Generalmente en criptomonedas</li>
+                            <li><strong>Impacto:</strong> Parálisis operativa completa</li>
+                            <li><strong>Tiempo:</strong> 1-7 días para recuperación</li>
+                        </ul>
+
+                        <div class="threat-stats">
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                                </svg>
+                                <span>Rescate promedio: $250K</span>
+                            </div>
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z" />
+                                </svg>
+                                <span>+2K ataques diarios</span>
+                            </div>
+                        </div>
+
+                        <div class="threat-timeline">
+                            <h3>Evolución del ataque:</h3>
+                            <ol class="timeline-steps">
+                                <li>Infección inicial</li>
+                                <li>Propagación en red</li>
+                                <li>Cifrado de archivos</li>
+                                <li>Demanda de rescate</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="threat-card" id="iot">
+                <div class="threat-header">
+                    <h2>Vulnerabilidades IoT</h2>
+                    <span class="threat-level medium">Medio</span>
+                </div>
+                <div class="threat-content">
+                    <div class="threat-info">
+                        <h3>¿Qué es?</h3>
+                        <p>Dispositivos conectados a Internet (cámaras, termostatos, electrodomésticos) con poca
+                            seguridad que pueden ser comprometidos.</p>
+
+                        <h3>Riesgos principales:</h3>
+                        <ul class="threat-types">
+                            <li><strong>Botnets:</strong> Redes de dispositivos zombis</li>
+                            <li><strong>Puertas traseras:</strong> Acceso no autorizado</li>
+                            <li><strong>Interceptación:</strong> Robo de datos sensibles</li>
+                            <li><strong>Ataques DDoS:</strong> Saturación de servicios</li>
+                        </ul>
+
+                        <div class="threat-stats">
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+                                </svg>
+                                <span>+25B dispositivos conectados</span>
+                            </div>
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z" />
+                                </svg>
+                                <span>83% sin seguridad adecuada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="threat-figure">
+                        <img src="https://www.automaticaeinstrumentacion.com/images/showid2/4320401?w=900&mh=700"
+                            alt="Dispositivos IoT vulnerables" class="threat-img">
+                        <figcaption>Dispositivos comunes vulnerables</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+
+        <section class="threats-table-section">
+            <h2>Comparativa de Amenazas</h2>
+            <div class="table-container">
+                <table class="threats-table">
+                    <caption>Resumen de características y estadísticas de amenazas cibernéticas</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Amenaza</th>
+                            <th scope="col">Frecuencia</th>
+                            <th scope="col">Impacto</th>
+                            <th scope="col">Objetivos</th>
+                            <th scope="col">Mitigación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Malware</th>
+                            <td>Muy Alta</td>
+                            <td>Alto</td>
+                            <td>Todos los usuarios</td>
+                            <td>Antivirus, actualizaciones</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Phishing</th>
+                            <td>Extrema</td>
+                            <td>Crítico</td>
+                            <td>Usuarios y empleados</td>
+                            <td>Educación, filtros email</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ransomware</th>
+                            <td>Alta</td>
+                            <td>Crítico</td>
+                            <td>Empresas, organizaciones</td>
+                            <td>Backups, segmentación</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">IoT</th>
+                            <td>Media</td>
+                            <td>Medio-Alto</td>
+                            <td>Dispositivos conectados</td>
+                            <td>Cambiar credenciales</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>© Junio, 2025 Ciberseguridad. Nilo Uel Curso Vila.</p>
+        </div>
+    </footer>
+
+    <script src="js/threats.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <title>Consejos de Ciberseguridad</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/consejos.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <figure class="logo-figure">
+                <a href="index.html" class="logo-link">
+                    <img src="img/header_logo.png" alt="Logo Ciberseguridad" class="logo" style="height: 100px;">
+                </a>
+            </figure>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="amenazas.html">Amenazas</a></li>
+                    <li><a href="consejos.html" class="active">Consejos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Menú móvil">☰</button>
+        </div>
+    </header>
+
+    <main class="main-content tips-page">
+        <section class="hero-tips">
+            <div class="hero-content">
+                <h1>Consejos de Ciberseguridad</h1>
+                <p>Protege tus dispositivos y datos personales con estas recomendaciones</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/shield.avif" alt="Escudo de protección digital" class="shield-svg">
+            </div>
+        </section>
+
+        <section class="tips-container">
+            <article class="tip-card" id="passwords">
+                <div class="tip-header">
+                    <svg class="tip-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M12 3a5 5 0 0 0-5 5v3H6v11h12V11h-1V8a5 5 0 0 0-5-5zm0 2a3 3 0 0 1 3 3v3H9V8a3 3 0 0 1 3-3zm-4 9h2v5H8zm4 0h2v5h-2zm4 0h2v5h-2z" />
+                    </svg>
+                    <h2>Contraseñas Seguras</h2>
+                </div>
+                <div class="tip-content">
+                    <ul class="tip-list">
+                        <li>Usa contraseñas de al menos 12 caracteres</li>
+                        <li>Combina mayúsculas, minúsculas, números y símbolos</li>
+                        <li>No reutilices contraseñas en diferentes servicios</li>
+                        <li>Considera usar un gestor de contraseñas</li>
+                        <li>Habilita autenticación de dos factores cuando esté disponible</li>
+                    </ul>
+                    <div class="password-meter">
+                        <div class="meter-bar weak"></div>
+                        <div class="meter-bar medium"></div>
+                        <div class="meter-bar strong"></div>
+                        <div class="meter-labels">
+                            <span>Débil</span>
+                            <span>Media</span>
+                            <span>Fuerte</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tip-card" id="phishing">
+                <div class="tip-header">
+                    <svg class="tip-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    <h2>Protección contra Phishing</h2>
+                </div>
+                <div class="tip-content">
+                    <ul class="tip-list">
+                        <li>Verifica siempre la URL del sitio web</li>
+                        <li>No hagas clic en enlaces de correos sospechosos</li>
+                        <li>Revisa cuidadosamente los remitentes de correo</li>
+                        <li>Busca errores gramaticales en los mensajes</li>
+                        <li>Nunca proporciones datos sensibles por correo</li>
+                    </ul>
+                    <figure class="phishing-example">
+                        <img src="https://www.godaddy.com/resources/es/wp-content/uploads/correo-electronico-falso-informacion-personal.png"
+                            alt="Ejemplo de correo de phishing" class="phishing-img">
+                        <figcaption>Ejemplo de correo fraudulento</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="tip-card" id="devices">
+                <div class="tip-header">
+                    <svg class="tip-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+                    </svg>
+                    <h2>Seguridad en Dispositivos</h2>
+                </div>
+                <div class="tip-content">
+                    <div class="device-tips">
+                        <div class="device-type">
+                            <h3>Smartphones</h3>
+                            <ul>
+                                <li>Usa bloqueo de pantalla (huella, patrón o PIN)</li>
+                                <li>Descarga apps solo de tiendas oficiales</li>
+                                <li>Revisa los permisos que solicitan las aplicaciones</li>
+                            </ul>
+                        </div>
+                        <div class="device-type">
+                            <h3>Computadoras</h3>
+                            <ul>
+                                <li>Mantén tu sistema operativo actualizado</li>
+                                <li>Usa un antivirus confiable</li>
+                                <li>Cifra tu disco duro si contiene información sensible</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="update-alert">
+                        <svg class="alert-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-1 15h2v2h-2zm0-10h2v6h-2z" />
+                        </svg>
+                        <p>Actualiza regularmente todos tus dispositivos</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tip-card" id="networks">
+                <div class="tip-header">
+                    <svg class="tip-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M12 3C6.95 3 3.15 4.85.5 7.71L12 22.5 23.5 7.71C20.85 4.85 17.05 3 12 3zm0 2c3.17 0 5.85 1.23 7.77 3.22L12 18.5 4.23 8.22C6.15 6.23 8.83 5 12 5z" />
+                    </svg>
+                    <h2>Redes Seguras</h2>
+                </div>
+                <div class="tip-content">
+                    <ul class="tip-list">
+                        <li>Evita redes WiFi públicas para transacciones sensibles</li>
+                        <li>Usa una VPN en redes no confiables</li>
+                        <li>Cambia la contraseña predeterminada de tu router</li>
+                        <li>Actualiza el firmware de tu router regularmente</li>
+                        <li>Deshabilita WPS y usa WPA2 o WPA3</li>
+                    </ul>
+                    <div class="network-visual">
+                        <div class="network-icons">
+                            <svg class="wifi-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z" />
+                            </svg>
+                            <svg class="vpn-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11V11.99z" />
+                            </svg>
+                            <svg class="lock-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+                            </svg>
+                        </div>
+                        <p class="network-tip">Configuración recomendada para máxima seguridad</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="resources-section">
+            <h2>Recursos Adicionales</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Guías de Seguridad</h3>
+                    <ul>
+                        <li><a href="#">Guía de contraseñas seguras (PDF)</a></li>
+                        <li><a href="#">Checklist de seguridad digital</a></li>
+                        <li><a href="#">Protección para pequeñas empresas</a></li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h3>Herramientas Recomendadas</h3>
+                    <ul>
+                        <li><a href="#">Gestores de contraseñas</a></li>
+                        <li><a href="#">Antivirus gratuitos</a></li>
+                        <li><a href="#">Servicios VPN confiables</a></li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h3>Pruebas de Seguridad</h3>
+                    <ul>
+                        <li><a href="#">Test de fortaleza de contraseña</a></li>
+                        <li><a href="#">Verificador de phishing</a></li>
+                        <li><a href="#">Escáner de vulnerabilidades</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>© Junio, 2025 Ciberseguridad. Nilo Uel Curso Vila.</p>
+        </div>
+    </footer>
+
+    <script src="js/tips.js"></script>
+</body>
+
+</html>
